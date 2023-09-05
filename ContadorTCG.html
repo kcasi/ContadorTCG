@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+	<style>
+	.linha120 {
+        margin: 10px;
+        background-color: #f08080;
+		text-align: center;
+		float: left;
+		width: 700px;
+		height: 225px;
+    }
+	.linha100 {
+        margin: 10px;
+        background-color: #ffa07a;
+		text-align: center;
+		float: left;
+		width: 700px;
+		height: 225px;
+    }
+	.linha80 {
+        margin: 10px;
+        background-color: #ffdead;
+		text-align: center;
+		float: left;
+		width: 700px;
+		height: 225px;
+    }
+	.linha60 {
+        margin: 10px;
+        background-color: #eee8aa;
+		text-align: center;
+		float: left;
+		width: 700px;
+		height: 225px;
+    }
+	.linha20 {
+        margin: 10px;
+        background-color: #98fb98;
+		text-align: center;
+		float: left;
+		width: 700px;
+		height: 225px;
+    }
+	.linhas {
+        margin: 5px;
+        background-color: #000000;
+		text-align: center;
+		float: left;
+		width: 60%;
+    }
+	.final {
+        margin: 10px;
+        background-color: #ffffff;
+		text-align: center;
+		float: right;
+		width: 35%;
+	}
+    .imagem {
+        margin: 5px;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+    }
+	.selecionar {
+        margin: 5px;
+        cursor: pointer;
+        width: 105px;
+        height: 180px;
+    }
+	.ativos {
+		cursor: pointer;
+	}
+	h1 {
+		color: #ffffff;
+	}
+	h4 {
+		color: #ffffff;
+	}
+
+</style>
+</head>
+<body>
+	<div class="linhas">
+    <h1>Contador</h1>
+    <h4>Selecione os personagens:</h4>
+	
+		<!-- Linha com imagens que adiciona/subtrai 120 -->
+		<div class="linha120" data-categoria="120">
+			<img class="imagem" id="Venti" src="cVenti.png" alt="Venti">
+			<img class="imagem" id="Zhongli" src="cZhongli.png" alt="Zhongli">
+			<img class="imagem" id="Raiden" src="cRaiden.png" alt="Raiden">
+			<img class="imagem" id="Nahida" src="cNahida.png" alt="Nahida">
+			<img class="imagem" id="Itto" src="cItto.png" alt="Itto">
+			<img class="imagem" id="Noelle" src="cNoelle.png" alt="Noelle">
+			<img class="imagem" id="Barbara" src="cBarbara.png" alt="Barbara">
+			<img class="imagem" id="YaeMiko" src="cYaeMiko.png" alt="YaeMiko">
+			<img class="imagem" id="Shenhe" src="cShenhe.png" alt="Shenhe">
+			<img class="imagem" id="Klee" src="cKlee.png" alt="Klee">
+			<img class="imagem" id="FatuiAgentePyro" src="cFatuiAgentePyro.png" alt="FatuiAgentePyro">
+			
+		</div>
+
+		<!-- Linha com imagens que adiciona/subtrai 100 -->
+		<div class="linha100" data-categoria="100">
+			<img class="imagem" id="Ayaka" src="cAyaka.png" alt="Ayaka">
+			<img class="imagem" id="Diona" src="cDiona.png" alt="Diona">
+			<img class="imagem" id="Qiqi" src="cQiqi.png" alt="Qiqi">
+			<img class="imagem" id="Candace" src="cCandace.png" alt="Candace">
+			<img class="imagem" id="Mona" src="cMona.png" alt="Mona"></br>
+			<img class="imagem" id="Oceanid" src="cOceanid.png" alt="Oceanid">
+			<img class="imagem" id="Terrorgumelo" src="cTerrorgumelo.png" alt="Terrorgumelo">
+			<img class="imagem" id="Tighnari" src="cTighnari.png" alt="Tighnari">
+			<img class="imagem" id="Sucrose" src="cSucrose.png" alt="Sucrose">
+			<img class="imagem" id="Jean" src="cJean.png" alt="Jean">
+			
+		</div>
+		
+		<!-- Linha com imagens que adiciona/subtrai 80 -->
+		<div class="linha80" data-categoria="80">
+			<img class="imagem" id="Tartaglia" src="cTartaglia.png" alt="Tartaglia">
+			<img class="imagem" id="Chongyun" src="cChongyun.png" alt="Chongyun">
+			<img class="imagem" id="Ganyu" src="cGanyu.png" alt="Ganyu">
+			<img class="imagem" id="Fischl" src="cFischl.png" alt="Fischl">
+			<img class="imagem" id="Razor" src="cRazor.png" alt="Razor"></br>
+			<img class="imagem" id="Keqing" src="cKeqing.png" alt="Keqing">
+			<img class="imagem" id="Collei" src="cCollei.png" alt="Collei">
+			<img class="imagem" id="MaguuKenki" src="cMaguuKenki.png" alt="MaguuKenki">
+			<img class="imagem" id="LawachurlPedroso" src="cLawachurlPedroso.png" alt="LawachurlPedroso">
+			
+		</div>
+		
+		<!-- Linha com imagens que adiciona/subtrai 60 -->
+		<div class="linha60" data-categoria="60">
+			<img class="imagem" id="Kaeya" src="cKaeya.png" alt="Kaeya">
+			<img class="imagem" id="Hutao" src="cHutao.png" alt="Hutao">
+			<img class="imagem" id="Xiangling" src="cXiangling.png" alt="Xiangling">
+			<img class="imagem" id="Kokomi" src="cKokomi.png" alt="Kokomi"></br>
+			<img class="imagem" id="Ayato" src="cAyato.png" alt="Ayato">
+			<img class="imagem" id="FatuiFeiticeiraHydro" src="cFatuiFeiticeiraHydro.png" alt="FatuiFeiticeiraHydro">
+			<img class="imagem" id="ChamasAbismais" src="cChamasAbismais.png" alt="ChamasAbismais">
+			<img class="imagem" id="HypostasisElectro" src="cHypostasisElectro.png" alt="HypostasisElectro">
+			
+		</div>
+		
+		<!-- Linha com imagens que adiciona/subtrai 20 -->
+		<div class="linha20" data-categoria="20">
+			<img class="imagem" id="Albedo" src="cAlbedo.png" alt="Albedo">
+			<img class="imagem" id="Ningguang" src="cNingguang.png" alt="Ningguang">
+			<img class="imagem" id="Amber" src="cAmber.png" alt="Amber">
+			<img class="imagem" id="Diluc" src="cDiluc.png" alt="Diluc"></br>	
+			<img class="imagem" id="Eula" src="cEula.png" alt="Eula">
+			<img class="imagem" id="Lisa" src="cLisa.png" alt="Lisa">
+			<img class="imagem" id="Sara" src="cSara.png" alt="Sara">
+			
+		</div>
+	</div>
+	
+    <div class="final" float: "right">
+    <p>Selecionados: </br> (clique para remover)</p>
+	<p>Valor Total: <span id="contador">0</span></p>
+	<p>
+		1 - <span id="ativo1" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
+		2 - <span id="ativo2" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
+		3 - <span id="ativo3" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> 
+	</p>
+    
+	
+	</div>
+
+    <script>
+	    // Função para lidar com as imagens da categoria 20
+    function handleCategoria(imagem) {
+		// Coleta a categoria da div pai da imagem clicada
+		var categoria = imagem.parentElement.dataset.categoria;
+		
+		// Verifique se a imagem já foi adicionada a algum ativo
+		if (imagensAdicionadas.includes(imagem.alt)) {
+			// A imagem já foi adicionada a um ativo, não faça nada
+			return;
+		}
+        // Crie uma cópia da imagem clicada
+        var imagemClicada = document.createElement("img");
+        imagemClicada.src = "./originais/c" + imagem.alt + ".png";
+        imagemClicada.alt = imagem.alt;
+        imagemClicada.width = 105; // Defina o tamanho da imagem replicada
+        imagemClicada.height = 180;
+
+        // Verifique qual slot de ativo está vazio e insira a imagem clicada nele
+        if (ativo1 == 0) {
+            ativo1name.textContent = imagem.alt;
+			ativo1name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+            ativo1name.appendChild(imagemClicada);
+            ativo1 = 1;
+			imagensAdicionadas.push(imagem.alt);
+			valor += parseInt(categoria);
+            contador.textContent = valor;
+			codativo1 = categoria;
+        } else if (ativo2 == 0) {
+            ativo2name.textContent = imagem.alt;
+            ativo2name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+            ativo2name.appendChild(imagemClicada);
+            ativo2 = 1;
+			imagensAdicionadas.push(imagem.alt);
+			valor += parseInt(categoria);
+            contador.textContent = valor;
+			codativo2 = categoria;
+        } else if (ativo3 == 0) {
+            ativo3name.textContent = imagem.alt;
+            ativo3name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+            ativo3name.appendChild(imagemClicada);
+            ativo3 = 1;
+			imagensAdicionadas.push(imagem.alt);
+			valor += parseInt(categoria);
+            contador.textContent = valor;
+			codativo3 = categoria;
+        }
+		
+    }
+	
+	// Função para remover uma imagem do array imagensAdicionadas
+	function removeImagemAdicionada(nomeImagem) {
+    const index = imagensAdicionadas.indexOf(nomeImagem);
+    if (index !== -1) {
+        imagensAdicionadas.splice(index, 1);
+    }
+}
+
+    // Obtém as referências para as imagens e o contador
+    var imagens = document.querySelectorAll(".imagem");
+    var contador = document.getElementById("contador");
+    var ativo1name = document.getElementById("ativo1");
+    var ativo2name = document.getElementById("ativo2");
+    var ativo3name = document.getElementById("ativo3");
+
+    // Inicializa a lista para validar as cartas usadas;
+	var imagensAdicionadas = [];
+
+    // Inicializa o valor do contador
+    var valor = 0;
+
+    // Inicializa as variáveis para definir os personagens
+    var ativo1 = 0;
+    var ativo2 = 0;
+    var ativo3 = 0;
+	var codativo1 = 0;
+    var codativo2 = 0;
+    var codativo3 = 0;
+
+    // Adiciona ouvintes de eventos de clique às imagens
+    imagens.forEach(function (imagem) {
+        imagem.addEventListener("click", function () {
+            handleCategoria(imagem);
+        });
+    });
+
+	
+	// Adicione um ouvinte de evento de clique para ativo1
+	var ativo1Element = document.getElementById("ativo1");
+	ativo1Element.addEventListener("click", function () {
+		ativo1 = 0;
+		removeImagemAdicionada(ativo1name.textContent);
+		ativo1name.textContent = '';
+        ativo1name.src = "./originais/c0.png";
+		valor -= codativo1;
+		contador.textContent = valor;
+		//appendChild(imagemClicada);
+		;
+	});
+
+	// Adicione um ouvinte de evento de clique para ativo2
+	var ativo2Element = document.getElementById("ativo2");
+	ativo2Element.addEventListener("click", function () {
+		ativo2 = 0;
+		removeImagemAdicionada(ativo2name.textContent);
+		ativo2name.textContent = '';
+        ativo2name.src = "./originais/c0.png";
+		valor -= codativo2;
+		contador.textContent = valor;
+		//appendChild(imagemClicada);
+		;
+	});
+
+	// Adicione um ouvinte de evento de clique para ativo3
+	var ativo3Element = document.getElementById("ativo3");
+	ativo3Element.addEventListener("click", function () {
+		ativo3 = 0;
+		removeImagemAdicionada(ativo3name.textContent);
+		ativo3name.textContent = '';
+        ativo3name.src = "./originais/c0.png";
+		valor -= codativo3;
+		contador.textContent = valor;
+		//appendChild(imagemClicada);
+		;
+	});
+		
+    </script>
+</body>
+</html>

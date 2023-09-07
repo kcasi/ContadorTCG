@@ -6,76 +6,123 @@
     <title>Contador TCG Genshin Impact</title>
 	<style>
 	.linha120 {
-        background-color: #f08080;
+        	background-color: #f08080;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 	.linha100 {
-        margin: 10px;
-        background-color: #ffa07a;
+        	margin: 10px;
+        	background-color: #ffa07a;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 	.linha80 {
-        margin: 10px;
-        background-color: #ffdead;
+        	margin: 10px;
+        	background-color: #ffdead;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 	.linha60 {
-        margin: 10px;
-        background-color: #eee8aa;
+        	margin: 10px;
+        	background-color: #eee8aa;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
+
+	.linha50 {
+	        margin: 10px;
+	        background-color: #ffffff;
+		text-align: center;
+		float: left;
+		margin: 2%;
+		width: 95%;
+		height: 10%;
+	}
+		
+	.linha30 {
+	        margin: 10px;
+	        background-color: #ffffff;
+		text-align: center;
+		float: left;
+		margin: 2%;
+		width: 95%;
+		height: 10%;
+	}
+		
 	.linha20 {
-        margin: 10px;
-        background-color: #98fb98;
+	        margin: 10px;
+	        background-color: #98fb98;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
+		
+	.linha10 {
+	        margin: 10px;
+	        background-color: #ffffff;
+		text-align: center;
+		float: left;
+		margin: 2%;
+		width: 95%;
+		height: 10%;
+	}
 	.linhas {
-        margin: 5px;
-        background-color: #000000;
+	        margin: 5px;
+	        background-color: #000000;
 		text-align: center;
 		float: left;
 		width: 60%;
-    }
+	}
 	.final {
-        margin: 10px;
-        background-color: #ffffff;
+	    margin: 10px;
+	    background-color: #ffffff;
 		text-align: center;
 		float: right;
 		width: 30%;
 	}
-    .imagem {
-        margin: 5px;
-        cursor: pointer;
-        width: 100px;
-        height: 100px;
-    }
+	.final2 {
+	    margin: 10px;
+	    background-color: #ffffff;
+		text-align: center;
+		float: right;
+		width: 30%;
+	}
+	.imagem {
+	        margin: 5px;
+	        cursor: pointer;
+	        width: 100px;
+	        height: 100px;
+	}
+	.carta {
+	        margin: 5px;
+	        cursor: pointer;
+	        width: 7%;
+	        height: 7%;
+	}
 	.selecionar {
-        margin: 5px;
-        cursor: pointer;
-        width: 105px;
-        height: 180px;
-    }
+	        margin: 5px;
+	        cursor: pointer;
+	        width: 105px;
+	        height: 180px;
+	}
 	.ativos {
+		cursor: pointer;
+	}
+	.ativos2 {
 		cursor: pointer;
 	}
 	h1 {
@@ -99,7 +146,7 @@
 			<img class="imagem" id="Raiden" src="cRaiden.png" alt="Raiden">
 			<img class="imagem" id="Nahida" src="cNahida.png" alt="Nahida">
 			<img class="imagem" id="Itto" src="cItto.png" alt="Itto">
-			<img class="imagem" id="Noelle" src="cNoelle.png" alt="Noelle">
+			<img class="imagem" id="Noelle" src="cNoelle.png" alt="Noelle"></br>
 			<img class="imagem" id="Barbara" src="cBarbara.png" alt="Barbara">
 			<img class="imagem" id="YaeMiko" src="cYaeMiko.png" alt="YaeMiko">
 			<img class="imagem" id="Shenhe" src="cShenhe.png" alt="Shenhe">
@@ -162,21 +209,188 @@
 			
 		</div>
 	</div>
+
+	<div class="linhas">
+    <h4>Selecione as cartas:</h4>
+	
+		<!-- Linha com imagens que adiciona/subtrai 60 -->
+		<div class="linha60" data-categoria="60">
+			<img class="carta" id="Adeptus_Temptation" src="./originais/60/Adeptus_Temptation.png" alt="Adeptus_Temptation">
+			<img class="carta" id="Ancient_Courtyard" src="./originais/60/Ancient_Courtyard.png" alt="Ancient_Courtyard">
+			<img class="carta" id="Covenant_of_Rock" src="./originais/60/Covenant_of_Rock.png" alt="Covenant_of_Rock">
+			<img class="carta" id="Gamblers_Earrings" src="./originais/60/Gamblers_Earrings.png" alt="Gamblers_Earrings">
+			<img class="carta" id="I_Havent_Lost_Yet!" src="./originais/60/I_Havent_Lost_Yet!.png" alt="I_Havent_Lost_Yet!">
+			<img class="carta" id="Liben" src="./originais/60/Liben.png" alt="Liben">
+			<img class="carta" id="Lotus_Flower_Crisp" src="./originais/60/Lotus_Flower_Crisp.png" alt="Lotus_Flower_Crisp">
+			<img class="carta" id="Nature_and_Wisdom" src="./originais/60/Nature_and_Wisdom.png" alt="Nature_and_Wisdom">
+			<img class="carta" id="Paimon" src="./originais/60/Paimon.png" alt="Paimon">
+			<img class="carta" id="Send_Off" src="./originais/60/Send_Off.png" alt="Send_Off">
+			<img class="carta" id="Stone_and_Contracts" src="./originais/60/Stone_and_Contracts.png" alt="Stone_and_Contracts">
+			<img class="carta" id="Tenacity_of_the_Millelith" src="./originais/60/Tenacity_of_the_Millelith.png" alt="Tenacity_of_the_Millelith">
+			<img class="carta" id="The_Bestest_Travel_Companion!" src="./originais/60/The_Bestest_Travel_Companion!.png" alt="The_Bestest_Travel_Companion!">
+			<img class="carta" id="Thunder_and_Eternity" src="./originais/60/Thunder_and_Eternity.png" alt="Thunder_and_Eternity">
+			<img class="carta" id="Treasure-Seeking_Seelie" src="./originais/60/Treasure-Seeking_Seelie.png" alt="Treasure-Seeking_Seelie">
+			<img class="carta" id="Vanarana" src="./originais/60/Vanarana.png" alt="Vanarana.png">
+			<img class="carta" id="Wind_and_Freedom" src="./originais/60/Wind_and_Freedom.png" alt="Wind_and_Freedom">			
+			<img class="carta" id="Wolfs_Gravestone" src="./originais/60/Wolfs_Gravestone.png" alt="Wolfs_Gravestone">
+			
+		</div>
+
+		<!-- Linha com imagens que adiciona/subtrai 50 -->
+		<div class="linha50" data-categoria="50">
+			<img class="carta" id="Abyssal_Summons" src="./originais/50/Abyssal_Summons.png" alt="Abyssal_Summons">
+			<img class="carta" id="Calxs_Arts" src="./originais/50/Calxs_Arts.png" alt="Calxs_Arts">
+			<img class="carta" id="Changing_Shifts" src="./originais/50/Changing_Shifts.png" alt="Changing_Shifts">
+			<img class="carta" id="Enduring_Rock" src="./originais/50/Enduring_Rock.png" alt="Enduring_Rock">
+			<img class="carta" id="Fatui_Conspiracy" src="./originais/50/Fatui_Conspiracy.png" alt="Fatui_Conspiracy">
+			<img class="carta" id="Fervent_Flames" src="./originais/50/Fervent_Flames.png" alt="Fervent_Flames">
+			<img class="carta" id="Fruit_of_Fufillment" src="./originais/50/Fruit_of_Fufillment.png" alt="Fruit_of_Fufillment">
+			<img class="carta" id="Generals_Ancient_Helm" src="./originais/50/Generals_Ancient_Helm.png" alt="Generals_Ancient_Helm">
+			<img class="carta" id="High_Voltage" src="./originais/50/High_Voltage.png" alt="High_Voltage">
+			<img class="carta" id="Impetuous_Winds" src="./originais/50/Impetuous_Winds.png" alt="Impetuous_Winds">
+			<img class="carta" id="Leave_It_to_Me!" src="./originais/50/Leave_It_to_Me!.png" alt="Leave_It_to_Me!">
+			<img class="carta" id="Lithic_Spear" src="./originais/50/Lithic_Spear.png" alt="Lithic_Spear">
+			<img class="carta" id="Liyue_Harbor_Wharf" src="./originais/50/Liyue_Harbor_Wharf.png" alt="Liyue_Harbor_Wharf">
+			<img class="carta" id="Minty_Meat_Rolls" src="./originais/50/Minty_Meat_Rolls.png" alt="Minty_Meat_Rolls">
+			<img class="carta" id="Mushroom_Pizza" src="./originais/50/Mushroom_Pizza.png" alt="Mushroom_Pizza">
+			<img class="carta" id="Sangonomiya_Shrine" src="./originais/50/Sangonomiya_Shrine.png" alt="Sangonomiya_Shrine">
+			<img class="carta" id="Shattering_Ice" src="./originais/50/Shattering_Ice.png" alt="Shattering_Ice">
+			<img class="carta" id="Soothing_Water" src="./originais/50/Soothing_Water.png" alt="Soothing_Water">
+			<img class="carta" id="Sprawling_Greenery" src="./originais/50/Sprawling_Greenery.png" alt="Sprawling_Greenery">
+			<img class="carta" id="Starsigns" src="./originais/50/Starsigns.png" alt="Starsigns">
+			<img class="carta" id="Strategize" src="./originais/50/Strategize.png" alt="Strategize">
+			<img class="carta" id="Timmie" src="./originais/50/Timmie.png" alt="Timmie">
+			<img class="carta" id="Woven_Flames" src="./originais/50/Woven_Flames.png" alt="Woven_Flames">
+			<img class="carta" id="Woven_Ice" src="./originais/50/Woven_Ice.png" alt="Woven_Ice">
+			<img class="carta" id="Woven_Stone" src="./originais/50/Woven_Stone.png" alt="Woven_Stone">
+			<img class="carta" id="Woven_Thunder" src="./originais/50/Woven_Thunder.png" alt="Woven_Thunder">
+			<img class="carta" id="Woven_Waters" src="./originais/50/Woven_Waters.png" alt="Woven_Waters">
+			<img class="carta" id="Woven_Weeds" src="./originais/50/Woven_Weeds.png" alt="Woven_Weeds">
+			<img class="carta" id="Woven_Winds" src="./originais/50/Woven_Winds.png" alt="Woven_Winds">
+			
+		</div>
+		
+		<!-- Linha com imagens que adiciona/subtrai 30 -->
+		<div class="linha30" data-categoria="30">
+			<img class="carta" id="Aquila_Favonia" src="./originais/30/Aquila_Favonia.png" alt="Aquila_Favonia">
+			<img class="carta" id="Chang_the_Ninth" src="./originais/30/Chang_the_Ninth.png" alt="Chang_the_Ninth">
+			<img class="carta" id="Favonius_Cathedral" src="./originais/30/Favonius_Cathedral.png" alt="Favonius_Cathedral">
+			<img class="carta" id="Iron_Tongue_Tian" src="./originais/30/Iron_Tongue_Tian.png" alt="Iron_Tongue_Tian">
+			<img class="carta" id="Katheryne" src="./originais/30/Katheryne.png" alt="Katheryne">
+			<img class="carta" id="Liu_Su" src="./originais/30/Liu_Su.png" alt="Liu_Su">
+			<img class="carta" id="Liyue_Harbor_Wharf" src="./originais/30/Liyue_Harbor_Wharf.webp" alt="Liyue_Harbor_Wharf">
+			<img class="carta" id="Master_Zhang_Support_Card" src="./originais/30/Master_Zhang_Support_Card.webp" alt="Master_Zhang_Support_Card">
+			<img class="carta" id="Parametric_Transformer" src="./originais/30/Parametric_Transformer.png" alt="Parametric_Transformer">
+			<img class="carta" id="Tenshukaku" src="./originais/30/Tenshukaku.webp" alt="Tenshukaku">
+			<img class="carta" id="Tubby" src="./originais/30/Tubby.png" alt="Tubby">
+			
+		</div>
+		
+		<!-- Linha com imagens que adiciona/subtrai 20 -->
+		<div class="linha20" data-categoria="20">
+			<img class="carta" id="Archaic_Petra" src="./originais/20/Archaic_Petra.png" alt="Archaic_Petra">
+			<img class="carta" id="Blizzard_Strayer" src="./originais/20/Blizzard_Strayer.png" alt="Blizzard_Strayer">
+			<img class="carta" id="Butter_Crab" src="./originais/20/Butter_Crab.png" alt="Butter_Crab">
+			<img class="carta" id="Chef_Mao" src="./originais/20/Chef_Mao.png" alt="Chef_Mao">
+			<img class="carta" id="Chinju_Forest" src="./originais/20/Chinju_Forest.png" alt="Chinju_Forest">
+			<img class="carta" id="Crimson_Witch_of_Flames" src="./originais/20/Crimson_Witch_of_Flames.png" alt="Crimson_Witch_of_Flames">
+			<img class="carta" id="Dawn_Winery" src="./originais/20/Dawn_Winery.webp" alt="Dawn_Winery">
+			<img class="carta" id="Deepwood_Memories" src="./originais/20/Deepwood_Memories.png" alt="Deepwood_Memories">
+			<img class="carta" id="Dunyarzad" src="./originais/20/Dunyarzad.png" alt="Dunyarzad">
+			<img class="carta" id="Ellin" src="./originais/20/Ellin.png" alt="Ellin">
+			<img class="carta" id="Grand_Narukami_Shrine" src="./originais/20/Grand_Narukami_Shrine.webp" alt="Grand_Narukami_Shrine">
+			<img class="carta" id="Heart_of_Depth" src="./originais/20/Heart_of_Depth.png" alt="Heart_of_Depth">
+			<img class="carta" id="Jade_Chamber" src="./originais/20/Jade_Chamber.png" alt="Jade_Chamber">
+			<img class="carta" id="Knights_of_Favonius_Library" src="./originais/20/Knights_of_Favonius_Library.png" alt="Knights_of_Favonius_Library">
+			<img class="carta" id="Quick_Knit" src="./originais/20/Quick_Knit.png" alt="Quick_Knit">
+			<img class="carta" id="Rana" src="./originais/20/Rana.png" alt="Rana">
+			<img class="carta" id="Sashimi_Platter" src="./originais/20/Sashimi_Platter.png" alt="Sashimi_Platter">
+			<img class="carta" id="Tandoori_Roast_Chicken" src="./originais/20/Tandoori_Roast_Chicken.png" alt="Tandoori_Roast_Chicken">
+			<img class="carta" id="Thundering_Fury" src="./originais/20/Thundering_Fury.png" alt="Thundering_Fury">
+			<img class="carta" id="Toss_Up" src="./originais/20/Toss_Up.png" alt="Toss_Up">
+			<img class="carta" id="Viridescent_Venerer" src="./originais/20/Viridescent_Venerer.png" alt="Viridescent_Venerer">
+			<img class="carta" id="Xudong" src="./originais/20/Xudong.png" alt="Xudong">
+			
+		</div>
+		
+		<!-- Linha com imagens que adiciona/subtrai 10 -->
+		<div class="linha10" data-categoria="10">
+			<img class="carta" id="Adventurers_Bandana" src="./originais/10/Adventurers_Bandana.png" alt="Adventurers_Bandana">
+			<img class="carta" id="Emblem_of_Severed_Fate" src="./originais/10/Emblem_of_Severed_Fate.png" alt="Emblem_of_Severed_Fate">
+			<img class="carta" id="Exiles_Circlet" src="./originais/10/Exiles_Circlet.png" alt="Exiles_Circlet">
+			<img class="carta" id="Friendship_Eternal" src="./originais/10/Friendship_Eternal.webp" alt="Friendship_Eternal">
+			<img class="carta" id="Instructors_Cap" src="./originais/10/Instructors_Cap.png" alt="Instructors_Cap">
+			<img class="carta" id="Jueyun_Guoba" src="./originais/10/Jueyun_Guoba.png" alt="Jueyun_Guoba">
+			<img class="carta" id="Kid_Kujirai" src="./originais/10/Kid_Kujirai.png" alt="Kid_Kujirai">
+			<img class="carta" id="Lucky_Dogs_Silver_Circlet" src="./originais/10/Lucky_Dogs_Silver_Circlet.png" alt="Lucky_Dogs_Silver_Circlet">
+			<img class="carta" id="Magic_Guide" src="./originais/10/Magic_Guide.png" alt="Magic_Guide">
+			<img class="carta" id="Mondstadt_Hash_Brown" src="./originais/10/Mondstadt_Hash_Brown.png" alt="Mondstadt_Hash_Brown">
+			<img class="carta" id="Northern_Smoked_Chicken" src="./originais/10/Northern_Smoked_Chicken.png" alt="Northern_Smoked_Chicken">
+			<img class="carta" id="Raven_Bow" src="./originais/10/Raven_Bow.png" alt="Raven_Bow">
+			<img class="carta" id="Sacrificial_Bow" src="./originais/10/Sacrificial_Bow.png" alt="Sacrificial_Bow">
+			<img class="carta" id="Sacrificial_Fragments" src="./originais/10/Sacrificial_Fragments.png" alt="Sacrificial_Fragments">
+			<img class="carta" id="Sacrificial_Greatsword" src="./originais/10/Sacrificial_Greatsword.png" alt="Sacrificial_Greatsword">
+			<img class="carta" id="Sacrificial_Sword" src="./originais/10/Sacrificial_Sword.png" alt="Sacrificial_Sword">
+			<img class="carta" id="Shimenawas_Reminiscence" src="./originais/10/Shimenawas_Reminiscence.png" alt="Shimenawas_Reminiscence">
+			<img class="carta" id="Sweet_Madame" src="./originais/10/Sweet_Madame.png" alt="Sweet_Madame">
+			<img class="carta" id="Travelers_Handy_Sword" src="./originais/10/Travelers_Handy_Sword.png" alt="Travelers_Handy_Sword">
+			<img class="carta" id="Traveling_Doctors_Handkerchief" src="./originais/10/Traveling_Doctors_Handkerchief.png" alt="Traveling_Doctors_Handkerchief">
+			<img class="carta" id="White_Iron_Greatsword" src="./originais/10/White_Iron_Greatsword.png" alt="White_Iron_Greatsword">
+			<img class="carta" id="White_Tassel" src="./originais/10/White_Tassel.png" alt="White_Tassel">
+			
+		</div>
+	</div>
 	
     <div class="final" float: "right">
     <p>Selecionados: </br> (clique para remover)</p>
 	<p>Valor Total: <span id="contador">0</span></p>
 	<p>
-		1 - <span id="ativo1" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
-		2 - <span id="ativo2" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
-		3 - <span id="ativo3" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> 
+		1 - <span id="char1" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
+		2 - <span id="char2" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
+		3 - <span id="char3" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> 
 	</p>
     
 	
 	</div>
+	
+	<div class="final2">
+	<p>
+		<span id="card01" class="ativos2"></br></span> </br>
+		<span id="card02" class="ativos2"></br></span> </br>
+		<span id="card03" class="ativos2"></br></span> </br>
+		<span id="card04" class="ativos2"></br></span> </br>
+		<span id="card05" class="ativos2"></br></span> </br>
+		<span id="card06" class="ativos2"></br></span> </br>
+		<span id="card07" class="ativos2"></br></span> </br>
+		<span id="card08" class="ativos2"></br></span> </br>
+		<span id="card09" class="ativos2"></br></span> </br>
+		<span id="card10" class="ativos2"></br></span> </br>
+		<span id="card11" class="ativos2"></br></span> </br>
+		<span id="card12" class="ativos2"></br></span> </br>
+		<span id="card13" class="ativos2"></br></span> </br>
+		<span id="card14" class="ativos2"></br></span> </br>
+		<span id="card15" class="ativos2"></br></span> </br>
+		<span id="card16" class="ativos2"></br></span> </br>
+		<span id="card17" class="ativos2"></br></span> </br>
+		<span id="card18" class="ativos2"></br></span> </br>
+		<span id="card19" class="ativos2"></br></span> </br>
+		<span id="card20" class="ativos2"></br></span> </br>
+		<span id="card21" class="ativos2"></br></span> </br>
+		<span id="card22" class="ativos2"></br></span> </br>
+		<span id="card23" class="ativos2"></br></span> </br>
+		<span id="card24" class="ativos2"></br></span> </br>
+		<span id="card25" class="ativos2"></br></span> </br>
+		<span id="card26" class="ativos2"></br></span> </br>
+		<span id="card27" class="ativos2"></br></span> </br>
+		<span id="card28" class="ativos2"></br></span> </br>
+		<span id="card29" class="ativos2"></br></span> </br>
+		<span id="card30" class="ativos2"></br></span> </br>
+	</p>
+	
+	</div>
 
-    <script>
-	    // Função para lidar com as imagens da categoria 20
+       <script>
+	// Função para lidar com as imagens da categoria 20
     function handleCategoria(imagem) {
 		// Coleta a categoria da div pai da imagem clicada
 		var categoria = imagem.parentElement.dataset.categoria;
@@ -186,6 +400,7 @@
 			// A imagem já foi adicionada a um ativo, não faça nada
 			return;
 		}
+		
         // Crie uma cópia da imagem clicada
         var imagemClicada = document.createElement("img");
         imagemClicada.src = "./originais/c" + imagem.alt + ".png";
@@ -194,112 +409,880 @@
         imagemClicada.height = 180;
 
         // Verifique qual slot de ativo está vazio e insira a imagem clicada nele
-        if (ativo1 == 0) {
-            ativo1name.textContent = imagem.alt;
-			ativo1name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
-            ativo1name.appendChild(imagemClicada);
-            ativo1 = 1;
+        if (char1 == 0) {
+            char1name.textContent = imagem.alt;
+			char1name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+            char1name.appendChild(imagemClicada);
+            char1 += 1;
 			imagensAdicionadas.push(imagem.alt);
 			valor += parseInt(categoria);
             contador.textContent = valor;
-			codativo1 = categoria;
-        } else if (ativo2 == 0) {
-            ativo2name.textContent = imagem.alt;
-            ativo2name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
-            ativo2name.appendChild(imagemClicada);
-            ativo2 = 1;
+			codchar1 = categoria;
+        } else if (char2 == 0) {
+            char2name.textContent = imagem.alt;
+            char2name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+            char2name.appendChild(imagemClicada);
+            char2 += 1;
 			imagensAdicionadas.push(imagem.alt);
 			valor += parseInt(categoria);
             contador.textContent = valor;
-			codativo2 = categoria;
-        } else if (ativo3 == 0) {
-            ativo3name.textContent = imagem.alt;
-            ativo3name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
-            ativo3name.appendChild(imagemClicada);
-            ativo3 = 1;
+			codchar2 = categoria;
+        } else if (char3 == 0) {
+            char3name.textContent = imagem.alt;
+            char3name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+            char3name.appendChild(imagemClicada);
+            char3 += 1;
 			imagensAdicionadas.push(imagem.alt);
 			valor += parseInt(categoria);
             contador.textContent = valor;
-			codativo3 = categoria;
+			codchar3 = categoria;
         }
 		
     }
 	
+	// Função para lidar com as imagens da nova categoria
+	function handleCardsCategoria(carta) {
+		// Coleta a categoria da div pai da carta clicada
+		var categoriaCarta = carta.parentElement.dataset.categoria;
+		
+		//Verica a quantidade de cartas no deck
+		if (contadordeck == 30) {
+			//limite de cartas no deck atingido, não faça nada
+			return;
+		}
+		
+		// Verifique se a carta é uma exceção que só pode ser adicionada uma vez
+		if (carta.alt === "Ancient_Courtyard" || carta.alt === "Covenant_of_Rock") {
+			// Verifique se a carta já foi adicionada uma vez
+			if (cartasAdicionadas.includes(carta.alt)) {
+				// A carta já foi adicionada, não faça nada
+				return;
+			}
+		}
+		
+		// Verifique se a carta já foi adicionada a algum card
+		if (cartasAdicionadas.includes(carta.alt)) {
+		
+			if (("Ancient_Courtyard")||("Covenant_of_Rock"))
+			// A carta já foi adicionada a algum card, verifique quantas vezes
+			var vezesAdicionada = cartasAdicionadas.filter(function (c) {
+				return c === carta.alt;
+			}).length;
+			
+			// Se já foi adicionada duas vezes, não a adicione novamente
+			if (vezesAdicionada >= 2) {
+				return;
+			}
+		}
+
+		// Crie uma cópia da card clicada
+		var cartaClicada = document.createElement("img");
+		cartaClicada.src = carta.src;
+		cartaClicada.alt = carta.alt;
+		cartaClicada.width = 105; // Defina o tamanho da imagem replicada
+		cartaClicada.height = 20;
+
+		// Verifique qual slot de card está vazio e insira a card clicada nele
+		if (card01 == 0) {
+			card01name.textContent = carta.alt;
+			card01name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card01name.appendChild(cartaClicada);
+			card01 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard01 = categoriaCarta;
+		} else if (card02 == 0) {
+			card02name.textContent = carta.alt;
+			card02name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card02name.appendChild(cartaClicada);
+			card02 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard02 = categoriaCarta;
+		} else if (card03 == 0) {
+			card03name.textContent = carta.alt;
+			card03name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card03name.appendChild(cartaClicada);
+			card03 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard03 = categoriaCarta;
+		} else if (card04 == 0) {
+			card04name.textContent = carta.alt;
+			card04name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card04name.appendChild(cartaClicada);
+			card04 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard04 = categoriaCarta;
+		} else if (card05 == 0) {
+			card05name.textContent = carta.alt;
+			card05name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card05name.appendChild(cartaClicada);
+			card05 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard05 = categoriaCarta;
+		} else if (card06 == 0) {
+			card06name.textContent = carta.alt;
+			card06name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card06name.appendChild(cartaClicada);
+			card06 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard06 = categoriaCarta;
+		} else if (card07 == 0) {
+			card07name.textContent = carta.alt;
+			card07name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card07name.appendChild(cartaClicada);
+			card07 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard07 = categoriaCarta;
+		} else if (card08 == 0) {
+			card08name.textContent = carta.alt;
+			card08name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card08name.appendChild(cartaClicada);
+			card08 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard08 = categoriaCarta;
+		} else if (card09 == 0) {
+			card09name.textContent = carta.alt;
+			card09name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card09name.appendChild(cartaClicada);
+			card09 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard09 = categoriaCarta;
+		} else if (card10 == 0) {
+			card10name.textContent = carta.alt;
+			card10name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card10name.appendChild(cartaClicada);
+			card10 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard10 = categoriaCarta;
+		} else if (card11 == 0) {
+			card11name.textContent = carta.alt;
+			card11name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card11name.appendChild(cartaClicada);
+			card11 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard11 = categoriaCarta;
+		} else if (card12 == 0) {
+			card12name.textContent = carta.alt;
+			card12name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card12name.appendChild(cartaClicada);
+			card12 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard12 = categoriaCarta;
+		} else if (card13 == 0) {
+			card13name.textContent = carta.alt;
+			card13name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card13name.appendChild(cartaClicada);
+			card13 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard13 = categoriaCarta;
+		} else if (card14 == 0) {
+			card14name.textContent = carta.alt;
+			card14name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card14name.appendChild(cartaClicada);
+			card14 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard14 = categoriaCarta;
+		} else if (card15 == 0) {
+			card15name.textContent = carta.alt;
+			card15name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card15name.appendChild(cartaClicada);
+			card15 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard15 = categoriaCarta;
+		} else if (card16 == 0) {
+			card16name.textContent = carta.alt;
+			card16name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card16name.appendChild(cartaClicada);
+			card16 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard16 = categoriaCarta;
+		} else if (card17 == 0) {
+			card17name.textContent = carta.alt;
+			card17name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card17name.appendChild(cartaClicada);
+			card17 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard17 = categoriaCarta;
+		} else if (card18 == 0) {
+			card18name.textContent = carta.alt;
+			card18name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card18name.appendChild(cartaClicada);
+			card18 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard18 = categoriaCarta;
+		} else if (card19 == 0) {
+			card19name.textContent = carta.alt;
+			card19name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card19name.appendChild(cartaClicada);
+			card19 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard19 = categoriaCarta;
+		} else if (card20 == 0) {
+			card20name.textContent = carta.alt;
+			card20name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card20name.appendChild(cartaClicada);
+			card20 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard20 = categoriaCarta;
+		} else if (card21 == 0) {
+			card21name.textContent = carta.alt;
+			card21name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card21name.appendChild(cartaClicada);
+			card21 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard21 = categoriaCarta;
+		} else if (card22 == 0) {
+			card22name.textContent = carta.alt;
+			card22name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card22name.appendChild(cartaClicada);
+			card22 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard22 = categoriaCarta;
+		} else if (card23 == 0) {
+			card23name.textContent = carta.alt;
+			card23name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card23name.appendChild(cartaClicada);
+			card23 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard23 = categoriaCarta;
+		} else if (card24 == 0) {
+			card24name.textContent = carta.alt;
+			card24name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card24name.appendChild(cartaClicada);
+			card24 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard24 = categoriaCarta;
+		} else if (card25 == 0) {
+			card25name.textContent = carta.alt;
+			card25name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card25name.appendChild(cartaClicada);
+			card25 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard25 = categoriaCarta;
+		} else if (card26 == 0) {
+			card26name.textContent = carta.alt;
+			card26name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card26name.appendChild(cartaClicada);
+			card26 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard26 = categoriaCarta;
+		} else if (card27 == 0) {
+			card27name.textContent = carta.alt;
+			card27name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card27name.appendChild(cartaClicada);
+			card27 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard27 = categoriaCarta;
+		} else if (card28 == 0) {
+			card28name.textContent = carta.alt;
+			card28name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card28name.appendChild(cartaClicada);
+			card28 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard28 = categoriaCarta;
+		} else if (card29 == 0) {
+			card29name.textContent = carta.alt;
+			card29name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card29name.appendChild(cartaClicada);
+			card29 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard29 = categoriaCarta;
+		} else if (card30 == 0) {
+			card30name.textContent = carta.alt;
+			card30name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card30name.appendChild(cartaClicada);
+			card30 += 1;
+			cartasAdicionadas.push(carta.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard30 = categoriaCarta;
+		}
+	}
+	
 	// Função para remover uma imagem do array imagensAdicionadas
 	function removeImagemAdicionada(nomeImagem) {
-    const index = imagensAdicionadas.indexOf(nomeImagem);
-    if (index !== -1) {
-        imagensAdicionadas.splice(index, 1);
-    }
-}
+		const index = imagensAdicionadas.indexOf(nomeImagem);
+		if (index !== -1) {
+			imagensAdicionadas.splice(index, 1);
+		}
+	}
+	
+	// Função para remover uma carta do array cartasAdicionadas
+	function removeCartaAdicionada(nomeCarta) {
+		const index = cartasAdicionadas.indexOf(nomeCarta);
+		if (index !== -1) {
+			cartasAdicionadas.splice(index, 1);
+		}
+	}
 
-    // Obtém as referências para as imagens e o contador
-    var imagens = document.querySelectorAll(".imagem");
+    // Obtém as referências para as imagens, cards e o contador de Valor
+    var cartas = document.querySelectorAll(".carta"); 
+	var imagens = document.querySelectorAll(".imagem");
     var contador = document.getElementById("contador");
-    var ativo1name = document.getElementById("ativo1");
-    var ativo2name = document.getElementById("ativo2");
-    var ativo3name = document.getElementById("ativo3");
+    var char1name = document.getElementById("char1");
+    var char2name = document.getElementById("char2");
+    var char3name = document.getElementById("char3");
+	var card01name = document.getElementById("card01");
+	var card02name = document.getElementById("card02");
+	var card03name = document.getElementById("card03");
+	var card04name = document.getElementById("card04");
+	var card05name = document.getElementById("card05");
+	var card06name = document.getElementById("card06");
+	var card07name = document.getElementById("card07");
+	var card08name = document.getElementById("card08");
+	var card09name = document.getElementById("card09");
+	var card10name = document.getElementById("card10");
+	var card11name = document.getElementById("card11");
+	var card12name = document.getElementById("card12");
+	var card13name = document.getElementById("card13");
+	var card14name = document.getElementById("card14");
+	var card15name = document.getElementById("card15");
+	var card16name = document.getElementById("card16");
+	var card17name = document.getElementById("card17");
+	var card18name = document.getElementById("card18");
+	var card19name = document.getElementById("card19");
+	var card20name = document.getElementById("card20");
+	var card21name = document.getElementById("card21");
+	var card22name = document.getElementById("card22");
+	var card23name = document.getElementById("card23");
+	var card24name = document.getElementById("card24");
+	var card25name = document.getElementById("card25");
+	var card26name = document.getElementById("card26");
+	var card27name = document.getElementById("card27");
+	var card28name = document.getElementById("card28");
+	var card29name = document.getElementById("card29");
+	var card30name = document.getElementById("card30");
 
     // Inicializa a lista para validar as cartas usadas;
 	var imagensAdicionadas = [];
+	
+	// Inicializa as variaves para contagem do deck;
+	var contadordeck = 0;
+	var cartasAdicionadas = [];
 
     // Inicializa o valor do contador
     var valor = 0;
 
     // Inicializa as variáveis para definir os personagens
-    var ativo1 = 0;
-    var ativo2 = 0;
-    var ativo3 = 0;
-	var codativo1 = 0;
-    var codativo2 = 0;
-    var codativo3 = 0;
-
+    var char1 = 0;
+    var char2 = 0;
+    var char3 = 0;
+	var codchar1 = 0;
+    var codchar2 = 0;
+    var codchar3 = 0;
+	
+	// Inicializa as variáveis para definir cartas do deck
+	var card01 = 0;
+	var card02 = 0;
+	var card03 = 0;
+	var card04 = 0;
+	var card05 = 0;
+	var card06 = 0;
+	var card07 = 0;
+	var card08 = 0;
+	var card09 = 0;
+	var card10 = 0;
+	var card11 = 0;
+	var card12 = 0;
+	var card13 = 0;
+	var card14 = 0;
+	var card15 = 0;
+	var card16 = 0;
+	var card17 = 0;
+	var card18 = 0;
+	var card19 = 0;
+	var card20 = 0;
+	var card21 = 0;
+	var card22 = 0;
+	var card23 = 0;
+	var card24 = 0;
+	var card25 = 0;
+	var card26 = 0;
+	var card27 = 0;
+	var card28 = 0;
+	var card29 = 0;
+	var card30 = 0;
+	var codcard01 = 0;
+	var codcard02 = 0;
+	var codcard03 = 0;
+	var codcard04 = 0;
+	var codcard05 = 0;
+	var codcard06 = 0;
+	var codcard07 = 0;
+	var codcard08 = 0;
+	var codcard09 = 0;
+	var codcard10 = 0;
+	var codcard11 = 0;
+	var codcard12 = 0;
+	var codcard13 = 0;
+	var codcard14 = 0;
+	var codcard15 = 0;
+	var codcard16 = 0;
+	var codcard17 = 0;
+	var codcard18 = 0;
+	var codcard19 = 0;
+	var codcard20 = 0;
+	var codcard21 = 0;
+	var codcard22 = 0;
+	var codcard23 = 0;
+	var codcard24 = 0;
+	var codcard25 = 0;
+	var codcard26 = 0;
+	var codcard27 = 0;
+	var codcard28 = 0;
+	var codcard29 = 0;
+	var codcard30 = 0;
+        
     // Adiciona ouvintes de eventos de clique às imagens
     imagens.forEach(function (imagem) {
         imagem.addEventListener("click", function () {
             handleCategoria(imagem);
         });
     });
+	
+	// Adiciona ouvintes de eventos de clique às cartas
+	cartas.forEach(function (carta) {
+		carta.addEventListener("click", function () {
+			handleCardsCategoria(carta);
+		});
+	});
+
 
 	
-	// Adicione um ouvinte de evento de clique para ativo1
-	var ativo1Element = document.getElementById("ativo1");
-	ativo1Element.addEventListener("click", function () {
-		ativo1 = 0;
-		removeImagemAdicionada(ativo1name.textContent);
-		ativo1name.textContent = '';
-        ativo1name.src = "./originais/c0.png";
-		valor -= codativo1;
+	// Adicione um ouvinte de evento de clique para char1
+	var char1Element = document.getElementById("char1");
+	char1Element.addEventListener("click", function () {
+		char1 = 0;
+		removeImagemAdicionada(char1name.textContent);
+		char1name.textContent = '';
+        char1name.src = "./originais/c0.png";
+		valor -= codchar1;
 		contador.textContent = valor;
 		//appendChild(imagemClicada);
 		;
 	});
 
-	// Adicione um ouvinte de evento de clique para ativo2
-	var ativo2Element = document.getElementById("ativo2");
-	ativo2Element.addEventListener("click", function () {
-		ativo2 = 0;
-		removeImagemAdicionada(ativo2name.textContent);
-		ativo2name.textContent = '';
-        ativo2name.src = "./originais/c0.png";
-		valor -= codativo2;
+	// Adicione um ouvinte de evento de clique para char2
+	var char2Element = document.getElementById("char2");
+	char2Element.addEventListener("click", function () {
+		char2 = 0;
+		removeImagemAdicionada(char2name.textContent);
+		char2name.textContent = '';
+        char2name.src = "./originais/c0.png";
+		valor -= codchar2;
 		contador.textContent = valor;
 		//appendChild(imagemClicada);
 		;
 	});
 
-	// Adicione um ouvinte de evento de clique para ativo3
-	var ativo3Element = document.getElementById("ativo3");
-	ativo3Element.addEventListener("click", function () {
-		ativo3 = 0;
-		removeImagemAdicionada(ativo3name.textContent);
-		ativo3name.textContent = '';
-        ativo3name.src = "./originais/c0.png";
-		valor -= codativo3;
+	// Adicione um ouvinte de evento de clique para char3
+	var char3Element = document.getElementById("char3");
+	char3Element.addEventListener("click", function () {
+		char3 = 0;
+		removeImagemAdicionada(char3name.textContent);
+		char3name.textContent = '';
+        char3name.src = "./originais/c0.png";
+		valor -= codchar3;
 		contador.textContent = valor;
 		//appendChild(imagemClicada);
 		;
 	});
+	
+	//Agora para as Cartas
+	
+	// Adicione um ouvinte de evento de clique para card01
+	var card01Element = document.getElementById("card01");
+	card01Element.addEventListener("click", function () {
+		card01 -= 1;
+		removeCartaAdicionada(card01name.textContent);
+		card01name.textContent = '';
+        card01name.src = "./originais/c0.png";
+		valor -= codcard01;
+		contador.textContent = valor;
+		//appendChild(imagemClicada);
+		;
+	});
+	
+	// Adicione um ouvinte de evento de clique para card02
+	var card02Element = document.getElementById("card02");
+	card02Element.addEventListener("click", function () {
+		card02 -= 1;
+		removeCartaAdicionada(card02name.textContent);
+		card02name.textContent = '';
+		card02name.src = "./originais/c0.png";
+		valor -= codcard02;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card03
+	var card03Element = document.getElementById("card03");
+	card03Element.addEventListener("click", function () {
+		card03 -= 1;
+		removeCartaAdicionada(card03name.textContent);
+		card03name.textContent = '';
+		card03name.src = "./originais/c0.png";
+		valor -= codcard03;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card04
+	var card04Element = document.getElementById("card04");
+	card04Element.addEventListener("click", function () {
+		card04 -= 1;
+		removeCartaAdicionada(card04name.textContent);
+		card04name.textContent = '';
+		card04name.src = "./originais/c0.png";
+		valor -= codcard04;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card05
+	var card05Element = document.getElementById("card05");
+	card05Element.addEventListener("click", function () {
+		card05 -= 1;
+		removeCartaAdicionada(card05name.textContent);
+		card05name.textContent = '';
+		card05name.src = "./originais/c0.png";
+		valor -= codcard05;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card06
+	var card06Element = document.getElementById("card06");
+	card06Element.addEventListener("click", function () {
+		card06 -= 1;
+		removeCartaAdicionada(card06name.textContent);
+		card06name.textContent = '';
+		card06name.src = "./originais/c0.png";
+		valor -= codcard06;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card07
+	var card07Element = document.getElementById("card07");
+	card07Element.addEventListener("click", function () {
+		card07 -= 1;
+		removeCartaAdicionada(card07name.textContent);
+		card07name.textContent = '';
+		card07name.src = "./originais/c0.png";
+		valor -= codcard07;
+		contador.textContent = valor;
+	});
+
+	// Adicione um ouvinte de evento de clique para card08
+	var card08Element = document.getElementById("card08");
+	card08Element.addEventListener("click", function () {
+		card08 -= 1;
+		removeCartaAdicionada(card08name.textContent);
+		card08name.textContent = '';
+		card08name.src = "./originais/c0.png";
+		valor -= codcard08;
+		contador.textContent = valor;
+	});
+
+	// Adicione um ouvinte de evento de clique para card09
+	var card09Element = document.getElementById("card09");
+	card09Element.addEventListener("click", function () {
+		card09 -= 1;
+		removeCartaAdicionada(card09name.textContent);
+		card09name.textContent = '';
+		card09name.src = "./originais/c0.png";
+		valor -= codcard09;
+		contador.textContent = valor;
+	});
+
+	// Adicione um ouvinte de evento de clique para card10
+	var card10Element = document.getElementById("card10");
+	card10Element.addEventListener("click", function () {
+		card10 -= 1;
+		removeCartaAdicionada(card10name.textContent);
+		card10name.textContent = '';
+		card10name.src = "./originais/c0.png";
+		valor -= codcard10;
+		contador.textContent = valor;
+	});
+			// Adicione um ouvinte de evento de clique para card11
+		var card11Element = document.getElementById("card11");
+		card11Element.addEventListener("click", function () {
+			card11 -= 1;
+			removeCartaAdicionada(card11name.textContent);
+			card11name.textContent = '';
+			card11name.src = "./originais/c0.png";
+			valor -= codcard11;
+			contador.textContent = valor;
+			//appendChild(imagemClicada);
+			;
+		});
+		
+	// Adicione um ouvinte de evento de clique para card12
+	var card12Element = document.getElementById("card12");
+	card12Element.addEventListener("click", function () {
+		card12 -= 1;
+		removeCartaAdicionada(card12name.textContent);
+		card12name.textContent = '';
+		card12name.src = "./originais/c0.png";
+		valor -= codcard12;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card13
+	var card13Element = document.getElementById("card13");
+	card13Element.addEventListener("click", function () {
+		card13 -= 1;
+		removeCartaAdicionada(card13name.textContent);
+		card13name.textContent = '';
+		card13name.src = "./originais/c0.png";
+		valor -= codcard13;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card14
+	var card14Element = document.getElementById("card14");
+	card14Element.addEventListener("click", function () {
+		card14 -= 1;
+		removeCartaAdicionada(card14name.textContent);
+		card14name.textContent = '';
+		card14name.src = "./originais/c0.png";
+		valor -= codcard14;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card15
+	var card15Element = document.getElementById("card15");
+	card15Element.addEventListener("click", function () {
+		card15 -= 1;
+		removeCartaAdicionada(card15name.textContent);
+		card15name.textContent = '';
+		card15name.src = "./originais/c0.png";
+		valor -= codcard15;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card16
+	var card16Element = document.getElementById("card16");
+	card16Element.addEventListener("click", function () {
+		card16 -= 1;
+		removeCartaAdicionada(card16name.textContent);
+		card16name.textContent = '';
+		card16name.src = "./originais/c0.png";
+		valor -= codcard16;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card17
+	var card17Element = document.getElementById("card17");
+	card17Element.addEventListener("click", function () {
+		card17 -= 1;
+		removeCartaAdicionada(card17name.textContent);
+		card17name.textContent = '';
+		card17name.src = "./originais/c0.png";
+		valor -= codcard17;
+		contador.textContent = valor;
+	});
+
+	// Adicione um ouvinte de evento de clique para card18
+	var card18Element = document.getElementById("card18");
+	card18Element.addEventListener("click", function () {
+		card18 -= 1;
+		removeCartaAdicionada(card18name.textContent);
+		card18name.textContent = '';
+		card18name.src = "./originais/c0.png";
+		valor -= codcard18;
+		contador.textContent = valor;
+	});
+
+	// Adicione um ouvinte de evento de clique para card19
+	var card19Element = document.getElementById("card19");
+	card19Element.addEventListener("click", function () {
+		card19 -= 1;
+		removeCartaAdicionada(card19name.textContent);
+		card19name.textContent = '';
+		card19name.src = "./originais/c0.png";
+		valor -= codcard19;
+		contador.textContent = valor;
+	});
+
+	// Adicione um ouvinte de evento de clique para card20
+	var card20Element = document.getElementById("card20");
+	card20Element.addEventListener("click", function () {
+		card20 -= 1;
+		removeCartaAdicionada(card20name.textContent);
+		card20name.textContent = '';
+		card20name.src = "./originais/c0.png";
+		valor -= codcard10;
+		contador.textContent = valor;
+	});
+
+	// Adicione um ouvinte de evento de clique para card21
+	var card21Element = document.getElementById("card21");
+	card21Element.addEventListener("click", function () {
+		card21 -= 1;
+		removeCartaAdicionada(card21name.textContent);
+		card21name.textContent = '';
+        card21name.src = "./originais/c0.png";
+		valor -= codcard21;
+		contador.textContent = valor;
+		//appendChild(imagemClicada);
+		;
+	});
+	
+	// Adicione um ouvinte de evento de clique para card22
+	var card22Element = document.getElementById("card22");
+	card22Element.addEventListener("click", function () {
+		card22 -= 1;
+		removeCartaAdicionada(card22name.textContent);
+		card22name.textContent = '';
+		card22name.src = "./originais/c0.png";
+		valor -= codcard22;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card23
+	var card23Element = document.getElementById("card23");
+	card23Element.addEventListener("click", function () {
+		card23 -= 1;
+		removeCartaAdicionada(card23name.textContent);
+		card23name.textContent = '';
+		card23name.src = "./originais/c0.png";
+		valor -= codcard23;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card24
+	var card24Element = document.getElementById("card24");
+	card24Element.addEventListener("click", function () {
+		card24 -= 1;
+		removeCartaAdicionada(card24name.textContent);
+		card24name.textContent = '';
+		card24name.src = "./originais/c0.png";
+		valor -= codcard24;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card25
+	var card25Element = document.getElementById("card25");
+	card25Element.addEventListener("click", function () {
+		card25 -= 1;
+		removeCartaAdicionada(card25name.textContent);
+		card25name.textContent = '';
+		card25name.src = "./originais/c0.png";
+		valor -= codcard25;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card26
+	var card26Element = document.getElementById("card26");
+	card26Element.addEventListener("click", function () {
+		card26 -= 1;
+		removeCartaAdicionada(card26name.textContent);
+		card26name.textContent = '';
+		card26name.src = "./originais/c0.png";
+		valor -= codcard26;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card27
+	var card27Element = document.getElementById("card27");
+	card27Element.addEventListener("click", function () {
+		card27 -= 1;
+		removeCartaAdicionada(card27name.textContent);
+		card27name.textContent = '';
+		card27name.src = "./originais/c0.png";
+		valor -= codcard27;
+		contador.textContent = valor;
+	});
+
+	// Adicione um ouvinte de evento de clique para card28
+	var card28Element = document.getElementById("card28");
+	card28Element.addEventListener("click", function () {
+		card28 -= 1;
+		removeCartaAdicionada(card28name.textContent);
+		card28name.textContent = '';
+		card28name.src = "./originais/c0.png";
+		valor -= codcard28;
+		contador.textContent = valor;
+	});
+
+	// Adicione um ouvinte de evento de clique para card29
+	var card29Element = document.getElementById("card29");
+	card29Element.addEventListener("click", function () {
+		card29 -= 1;
+		removeCartaAdicionada(card29name.textContent);
+		card29name.textContent = '';
+		card29name.src = "./originais/c0.png";
+		valor -= codcard29;
+		contador.textContent = valor;
+	});
+		
+	// Adicione um ouvinte de evento de clique para card30
+	var card30Element = document.getElementById("card30");
+	card30Element.addEventListener("click", function () {
+		card30 -= 1;
+		removeCartaAdicionada(card30name.textContent);
+		card30name.textContent = '';
+		card30name.src = "./originais/c0.png";
+		valor -= codcard30;
+		contador.textContent = valor;
+	});
+	
+	
 		
     </script>
 </body>

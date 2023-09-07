@@ -81,11 +81,13 @@
 		height: 10%;
 	}
 	.linhas {
-	        margin: 5px;
-	        background-color: #000000;
+		margin: 5px;
+		background-color: #000000;
 		text-align: center;
 		float: left;
 		width: 60%;
+		overflow-y: auto;
+		max-height: calc(100vh - 20px);
 	}
 	.final {
 	    margin: 10px;
@@ -116,8 +118,8 @@
 	.selecionar {
 	        margin: 5px;
 	        cursor: pointer;
-	        width: 105px;
-	        height: 180px;
+	        width: 75px;
+	        height: 135px;
 	}
 	.ativos {
 		cursor: pointer;
@@ -125,20 +127,42 @@
 	.ativos2 {
 		cursor: pointer;
 	}
+	.sticky {
+		/*position: -webkit-sticky;
+		position: sticky;
+		top: 0;*/
+		z-index: 100;
+		background-color: eeeeee;
+		overflow-y: auto;
+		max-height: calc(100vh - 20px);
+	}
 	h1 {
 		color: #ffffff;
 	}
 	h4 {
 		color: #ffffff;
 	}
+	#chars {
+		display: block;
+	}
+	#cartas {
+		display: none;
+	}
+	#alterna {
+		cursor: pointer;
+		text-align: center;
+		float: left;
+		width: 100px;
+	    height: 100px;
+	}
 
 </style>
 </head>
 <body>
-	<div class="linhas">
-    <h1>Contador</h1>
-    <h4>Selecione os personagens:</h4>
-	
+	<div class="linhas" id="chars">
+		<h1>Contador</h1>
+		<h4>Selecione os personagens:</h4>
+		
 		<!-- Linha com imagens que adiciona/subtrai 120 -->
 		<div class="linha120" data-categoria="120">
 			<img class="imagem" id="Venti" src="cVenti.png" alt="Venti">
@@ -210,7 +234,8 @@
 		</div>
 	</div>
 
-	<div class="linhas">
+	<div class="linhas" id="cartas">
+	<h1>Contador</h1>
     <h4>Selecione as cartas:</h4>
 	
 		<!-- Linha com imagens que adiciona/subtrai 60 -->
@@ -340,53 +365,53 @@
 			
 		</div>
 	</div>
-	
-    <div class="final" float: "right">
-    <p>Selecionados: </br> (clique para remover)</p>
-	<p>Valor Total: <span id="contador">0</span></p>
-	<p>
-		1 - <span id="char1" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
-		2 - <span id="char2" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
-		3 - <span id="char3" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> 
-	</p>
-    
-	
-	</div>
-	
-	<div class="final2">
-	<p>
-		<span id="card01" class="ativos2"></br></span> </br>
-		<span id="card02" class="ativos2"></br></span> </br>
-		<span id="card03" class="ativos2"></br></span> </br>
-		<span id="card04" class="ativos2"></br></span> </br>
-		<span id="card05" class="ativos2"></br></span> </br>
-		<span id="card06" class="ativos2"></br></span> </br>
-		<span id="card07" class="ativos2"></br></span> </br>
-		<span id="card08" class="ativos2"></br></span> </br>
-		<span id="card09" class="ativos2"></br></span> </br>
-		<span id="card10" class="ativos2"></br></span> </br>
-		<span id="card11" class="ativos2"></br></span> </br>
-		<span id="card12" class="ativos2"></br></span> </br>
-		<span id="card13" class="ativos2"></br></span> </br>
-		<span id="card14" class="ativos2"></br></span> </br>
-		<span id="card15" class="ativos2"></br></span> </br>
-		<span id="card16" class="ativos2"></br></span> </br>
-		<span id="card17" class="ativos2"></br></span> </br>
-		<span id="card18" class="ativos2"></br></span> </br>
-		<span id="card19" class="ativos2"></br></span> </br>
-		<span id="card20" class="ativos2"></br></span> </br>
-		<span id="card21" class="ativos2"></br></span> </br>
-		<span id="card22" class="ativos2"></br></span> </br>
-		<span id="card23" class="ativos2"></br></span> </br>
-		<span id="card24" class="ativos2"></br></span> </br>
-		<span id="card25" class="ativos2"></br></span> </br>
-		<span id="card26" class="ativos2"></br></span> </br>
-		<span id="card27" class="ativos2"></br></span> </br>
-		<span id="card28" class="ativos2"></br></span> </br>
-		<span id="card29" class="ativos2"></br></span> </br>
-		<span id="card30" class="ativos2"></br></span> </br>
-	</p>
-	
+	<img id="alterna" src="Alterna_Chars.png" alt="Alterna_Chars">
+	<div class="sticky">
+		<div class="final">
+		
+		<p>Selecionados: </br> (clique para remover)</p>
+		<p>Valor Total: <span id="contador">0</span></p>
+		<p>
+			1 - <span id="char1" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
+			2 - <span id="char2" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> </br>
+			3 - <span id="char3" class="ativos"></br><img class="selecionar" src="originais/c0.png" alt="Selecionar" ></span> 
+		</p>
+		</div>
+		
+		<div class="final2">
+			<p>
+				<span id="card01" class="ativos2"></br></span></br>
+				<span id="card02" class="ativos2"></br></span></br>
+				<span id="card03" class="ativos2"></br></span></br>
+				<span id="card04" class="ativos2"></br></span></br>
+				<span id="card05" class="ativos2"></br></span></br>
+				<span id="card06" class="ativos2"></br></span></br>
+				<span id="card07" class="ativos2"></br></span></br>
+				<span id="card08" class="ativos2"></br></span></br>
+				<span id="card09" class="ativos2"></br></span></br>
+				<span id="card10" class="ativos2"></br></span></br>
+				<span id="card11" class="ativos2"></br></span></br>
+				<span id="card12" class="ativos2"></br></span></br>
+				<span id="card13" class="ativos2"></br></span></br>
+				<span id="card14" class="ativos2"></br></span></br>
+				<span id="card15" class="ativos2"></br></span></br>
+				<span id="card16" class="ativos2"></br></span></br>
+				<span id="card17" class="ativos2"></br></span></br>
+				<span id="card18" class="ativos2"></br></span></br>
+				<span id="card19" class="ativos2"></br></span></br>
+				<span id="card20" class="ativos2"></br></span></br>
+				<span id="card21" class="ativos2"></br></span></br>
+				<span id="card22" class="ativos2"></br></span></br>
+				<span id="card23" class="ativos2"></br></span></br>
+				<span id="card24" class="ativos2"></br></span></br>
+				<span id="card25" class="ativos2"></br></span></br>
+				<span id="card26" class="ativos2"></br></span></br>
+				<span id="card27" class="ativos2"></br></span></br>
+				<span id="card28" class="ativos2"></br></span></br>
+				<span id="card29" class="ativos2"></br></span></br>
+				<span id="card30" class="ativos2"></br></span>
+			</p>
+		</div>
 	</div>
 
        <script>
@@ -405,8 +430,8 @@
         var imagemClicada = document.createElement("img");
         imagemClicada.src = "./originais/c" + imagem.alt + ".png";
         imagemClicada.alt = imagem.alt;
-        imagemClicada.width = 105; // Defina o tamanho da imagem replicada
-        imagemClicada.height = 180;
+        imagemClicada.width = 75; // Defina o tamanho da imagem replicada
+        imagemClicada.height = 135;
 
         // Verifique qual slot de ativo está vazio e insira a imagem clicada nele
         if (char1 == 0) {
@@ -773,6 +798,7 @@
 	}
 
     // Obtém as referências para as imagens, cards e o contador de Valor
+    var alterna = document.getElementById("alterna");
     var cartas = document.querySelectorAll(".carta"); 
 	var imagens = document.querySelectorAll(".imagem");
     var contador = document.getElementById("contador");
@@ -1282,6 +1308,28 @@
 		contador.textContent = valor;
 	});
 	
+	
+	
+	// Adiciona um ouvinte de eventos de clique na imagem de alternar divs
+	alterna.addEventListener("click", function () {
+		// Verifica qual imagem está atualmente exibida
+		if (alterna.src.endsWith("Alterna_Chars.png")) {
+			// Alterna para a oposta
+			alterna.src = "Alterna_Cartas.png";
+			
+			// Exibe a div cartas e oculta a div chars
+			document.getElementById("chars").style.display = "none";
+			document.getElementById("cartas").style.display = "block";
+		} else {
+			// Alterna para a imagem1
+			alterna.src = "Alterna_Chars.png";
+			
+			// Exibe a div chars e oculta a div cartas
+			document.getElementById("chars").style.display = "block";
+			document.getElementById("cartas").style.display = "none";
+		}
+	});
+
 	
 		
     </script>
